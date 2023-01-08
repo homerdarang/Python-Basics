@@ -16,14 +16,23 @@ print(f"Your user id is: {user1.id} and \nYour username is: {user1.username}")
 user2 = User(input("what is your id? "), input("What is your name? "))
 print(f"Your user id is: {user2.id} and \nYour username is {user2.username}")
 
+user3 = User(input("What is your id? "), input("What is your name? "))
+print(f"Your id is: {user3.id} \nYour username is {user3.username}")
+
 user1.follow(user2)
 user2.follow(user1)
+user3.follow(user1)
+user1.follow(user3)
+user2.follow(user3)
+user3.follow(user2)
 print(user1.followers)
 print(user1.following)
 
 print(user2.followers)
 print(user2.following)
 
+print(user3.followers)
+print(user3.following)
 
 # user1 = User()
 # user1.id = "001"
