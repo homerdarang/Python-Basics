@@ -25,6 +25,7 @@ user3.follow(user1)
 user1.follow(user3)
 user2.follow(user3)
 user3.follow(user2)
+
 print(user1.followers)
 print(user1.following)
 
